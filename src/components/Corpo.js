@@ -5,12 +5,12 @@ export default function Corpo(){
 
     //associa o retorno da função canal ao props.cnl
     const canal =() => {
-        return 'CFB Cursos'
+        return 'React.JS'
     } 
 
     //associa os valores de youtube e curso ao props.ytb e props.crs
-    const youtube = 'youtube.com/cfbcursos';
-    const curso = 'React.js';
+    const youtube = 'youtube.com';
+    const curso = 'Awari';
 
     //associa o valor de somar ao props.smr
     const somar = (v1, v2)=>{
@@ -25,9 +25,9 @@ export default function Corpo(){
     const trocaNome = ()=> {
         let nomeTrocado='';
         if(nome ==='Claudio'){
-            nomeTrocado ='Marcelo'
+            nomeTrocado ='Pereira'
             return nomeTrocado
-        }else if(nome ==='Marcelo'){
+        }else if(nome ==='Pereira'){
             nomeTrocado ='Claudio'
             return nomeTrocado
         }   
@@ -45,7 +45,7 @@ export default function Corpo(){
             />
             <p>Valor do state num: {num}</p>
             <button onClick={()=>setnum(num+1)}>Soma 1</button>
-            <p>O nome associado é: <b>{nome}</b></p>
+            <p>Trocar Nome: <b>{nome}</b></p>
             <button onClick={()=>setnome(trocaNome)}>Muda Nome</button>
         </section>
     )
